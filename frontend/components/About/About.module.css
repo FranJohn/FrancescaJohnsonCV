@@ -1,3 +1,8 @@
+.aboutSection {
+  display: flex;
+  justify-content: center;
+}
+
 .aboutContainer {
   display: flex;
   flex-direction: column;
@@ -12,6 +17,7 @@
   text-align: center;
   padding: 0rem;
   box-sizing: border-box;
+  max-width: 900px;
 }
 
 .navHeightSection {
@@ -24,6 +30,7 @@
   padding: 0rem;
   border-top: 5rem solid #DA7b93; 
   box-sizing:content-box;
+  max-width: 800px;
 }
 
 .aboutTitle {
@@ -40,7 +47,15 @@
 .fullHeightSection button,
 .navHeightSection button {
   padding: 1rem;
+  background-color: #DA7B93;
+  transition: background-color 1s ease-in-out; 
 }
+
+.flashButtons  {
+  font-weight: bold;
+
+}
+
 
 
 .fullHeightSection .aboutContent{
