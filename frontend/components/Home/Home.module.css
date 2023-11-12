@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+  
+.imageContainer {
+    margin-right: 3rem;
+}
+  
+.profileImage {
+    border-radius: 50%;
+}
+  
+.textContainer {
+    max-width: 600px;
+    padding: 10px;
+}
+  
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imageContainer {
+      margin: 1rem;
+    }
+}
+  

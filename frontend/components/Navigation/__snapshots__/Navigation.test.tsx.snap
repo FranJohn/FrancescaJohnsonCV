@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Component matches snapshot 1`] = `
+<div>
+  <nav
+    class="navigation"
+  >
+    <div
+      class="logo"
+    >
+      Your CV
+    </div>
+    <div
+      class="links"
+    >
+      <a
+        data-testid="nav-link-home"
+        href="/home"
+      >
+        Home
+      </a>
+      <a
+        data-testid="nav-link-about"
+        href="/about"
+      >
+        About
+      </a>
+      <a
+        data-testid="nav-link-services"
+        href="/services"
+      >
+        Services
+      </a>
+    </div>
+    <div
+      class="hamburger "
+      data-testid="hamburger-menu"
+    >
+      <div
+        class="hamburger-line"
+      />
+      <div
+        class="hamburger-line"
+      />
+      <div
+        class="hamburger-line"
+      />
+    </div>
+    <div
+      class="dropdown "
+      data-testid="dropdown-menu"
+    >
+      <a
+        data-testid="dropdown-link-home"
+        href="/home"
+      >
+        Home
+      </a>
+      <a
+        data-testid="dropdown-link-about"
+        href="/about"
+      >
+        About
+      </a>
+      <a
+        data-testid="dropdown-link-services"
+        href="/services"
+      >
+        Services
+      </a>
+    </div>
+  </nav>
+</div>
+`;
