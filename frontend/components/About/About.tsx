@@ -76,11 +76,11 @@ const About: React.FC = () => {
           <h2 className={styles.aboutTitle}>{textData.about1Title}</h2>
           <div className={styles.aboutContent}>
             {textData?.about1Content?.text.map((paragraph: string, index: number) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index} className={styles.aboutContentParagraph}>{paragraph}</p>
             ))}
           </div>
           <button className={styles.bottomButton} onClick={() => scrollToSection(about2Ref)}>
-            <span className={styles.buttonText}>Scroll down to {textData.about2Title}</span>
+            <span className={styles.buttonText}>Down to {textData.about2Title}</span>
             <span className={styles.arrow}>&#8744;</span>
           </button>
         </div>
@@ -90,16 +90,16 @@ const About: React.FC = () => {
       <section className={styles.navHeightSection} ref={about2Ref}>
         <button className={styles.topButton} onClick={() => scrollToTop()}>
           <span className={styles.arrow}>&#8743;</span>
-          <span className={styles.buttonText}>Scroll up to {textData.about1Title}</span>
+          <span className={styles.buttonText}>Up to {textData.about1Title}</span>
         </button>
         <h2 className={styles.aboutTitle}>{textData.about2Title}</h2>
         <div className={styles.aboutContent}>
           {textData?.about2Content?.text.map((paragraph: string, index: number) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index} className={styles.aboutContentParagraph}>{paragraph}</p>
             ))}
         </div>
         <button className={styles.bottomButton} onClick={() => scrollToSection(about3Ref)}>
-          <span className={styles.buttonText}>Scroll down to {textData.about3Title}</span>
+          <span className={styles.buttonText}>Down to {textData.about3Title}</span>
           <span className={styles.arrow}>&#8744;</span>
         </button>
       </section>
@@ -108,16 +108,16 @@ const About: React.FC = () => {
       <section className={styles.navHeightSection} ref={about3Ref}>
         <button className={styles.topButton} onClick={() => scrollToSection(about2Ref)}>
           <span className={styles.arrow}>&#8743;</span>
-          <span className={styles.buttonText}>Scroll up to {textData.about2Title}</span>
+          <span className={styles.buttonText}>Up to {textData.about2Title}</span>
         </button>
         <h2 className={styles.aboutTitle}>{textData.about3Title}</h2>
         <div className={styles.aboutContent}>
           {textData?.about3Content?.text.map((paragraph: string, index: number) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index} className={styles.aboutContentParagraph}>{paragraph}</p>
             ))}
         </div>
         <button className={styles.bottomButton} onClick={() => scrollToSection(about4Ref)}>
-          <span className={styles.buttonText}>Scroll down to {textData.about4Title}</span>
+          <span className={styles.buttonText}>Down to {textData.about4Title}</span>
           <span className={styles.arrow}>&#8744;</span>
         </button>
       </section> 
@@ -126,17 +126,16 @@ const About: React.FC = () => {
       <section className={styles.navHeightSection} ref={about4Ref}>
         <button className={styles.topButton} onClick={() => scrollToSection(about3Ref)}>
           <span className={styles.arrow}>&#8743;</span>
-          <span className={styles.buttonText}>Scroll up to {textData.about3Title}</span>
+          <span className={styles.buttonText}>Up to {textData.about3Title}</span>
         </button>
         <h2 className={styles.aboutTitle}>{textData.about4Title}</h2>
         <div className={styles.aboutContent}>
           {textData?.about4Content?.text.map((paragraph: string, index: number) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index} className={styles.aboutContentParagraph}>{paragraph}</p> 
             ))}
         </div>
       </section>
   </div>
-    
   );
 };
 

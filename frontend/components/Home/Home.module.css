@@ -17,6 +17,10 @@
     max-width: 600px;
     padding: 10px;
 }
+
+.homeContentParagraph {
+    margin-bottom: 1rem;
+}
   
 @media (max-width: 768px) {
     .container {

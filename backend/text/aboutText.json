@@ -1,10 +1,11 @@
 {
     "about1Title": "Introduction",
     "about1Content": {"text": [
-        "Introduction content",
-        "",
-        "Next paragraph"
-    ]},
+        "Hello. I'm Francesca, a passionate software developer hailing from Tunbridge Wells in Kent, England, and currently calling the beautiful landscapes of Oxfordshire my home.",
+        "My journey in the tech world began with a First Degree Master's in Electronic and Electrical Engineering. While navigating the complexities of circuits and systems, I discovered my true passion lay in the world of coding.",
+        "Fast forward to today, and I find myself immersed in the dynamic realm of software development. My expertise spans a spectrum of roles, from crafting innovative web applications with a focus on frontend development to venturing into high-profile project management.",
+        "My current role is varied, which has exposed me to a wide range of sectors, technologies and customers. However, my major focus throughout has been Frontend development and I would be excited to move into a role that allows me to further develop these skills and specialise."
+        ]},
     "about2Title": "Education",
     "about2Content": {"text": [
         "Education content",
@@ -13,14 +14,19 @@
     ]},
     "about3Title": "Work",
     "about3Content": {"text": [
-        "Work content",
-        "",
-        "Next paragraph"
+        "In the coding realm, I find joy in working with technologies like React, JavaScript, Node.js, Python, and C/C++. If there's a frontend tech I haven't touched yet, I'm likely eager to dive in!",
+        "My work is fueled by challenges, shared goals, and collaborative efforts. I've embraced elements of agile development, valuing stakeholder involvement and responsiveness to feedback.",
+        "Among my proud achievements are web applications for product configuration and visualization. These product were origionally targeted for the self-driving car market but are now being adopted for use in new products and markets. Overcoming challenges like data encoding, network FTP, and complex mathematical modeling, I've crafted solutions that are now hosted both locally and on the cloud."
     ]},
-    "about4Title": "Interests",
+    "about4Title": "Leadership and growth",
     "about4Content": {"text": [
-        "Interests content",
-        "",
-        "Next paragraph"
+        ""
+    ]},
+    "about5Title": "Interests",
+    "about5Content": {"text": [
+        "Beyond coding behind my screen, you'll find me indulging in a variety of interests.", 
+        "I'm a Formula 1 enthusiast. I luckily have a group of friends who also love to watch and don't seem to mind me nattering about it!",
+        "I love spending time exploring new topics through podcasts and books. Learning new things interests me greatly and i love science, technology and business topics.",
+        "Aside from this, I really enjoy heading out into the countryside for walks (especially when I can borrow a dog or two from friends and family!). I love getting some light exercise into my daily routine and find a dog walk a day is the perfect way to get this."
     ]}
 }

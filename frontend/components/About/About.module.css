@@ -32,6 +32,11 @@
   font-size: 18px;
 }
 
+.aboutContentParagraph {
+  margin: 1rem;
+  margin-top: 0rem;
+}
+
 .fullHeightSection button,
 .navHeightSection button {
   padding: 1rem;
@@ -40,6 +45,7 @@
 
 .fullHeightSection .aboutContent{
   height: 95%;
+  padding: 1rem;
 }
 
 .navHeightSection .aboutContent{
