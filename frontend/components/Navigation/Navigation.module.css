@@ -2,6 +2,9 @@
     border-bottom: #DA7b93 1px solid;
     display:block;
     width:100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 1);
+    top: 0;
 }
 
 .nav__container {
@@ -18,7 +21,6 @@
     display: flex;
     flex-direction: row;
     padding: 0rem;
-    background-color: rgba(28, 51, 52, 0);
     color: white;
     position: relative;
     width: auto;
@@ -27,7 +29,6 @@
 
 .logo {
     font-size: 1.5rem;
-    background-color: rgba(28, 51, 52, 0);
     transition: background-color 1s ease;
     text-align: center;
     width: 100%;

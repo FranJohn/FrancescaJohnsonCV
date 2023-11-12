@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 :root {
   --foreground-rgb: 255, 255, 255;
@@ -19,7 +17,6 @@
 }
 
 body {
-  font-family: 'Permanent Marker', cursive;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -33,4 +30,10 @@ h1 {
   font-weight: bold;
   padding-bottom: 0.3rem;
   font-size: 18px;
+}
+
+.navigation_padding {
+  padding-top: 5rem;
+  position: relative;
+  display: block;
 }

@@ -22,9 +22,10 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </head>
       <body className={inter.className}>
-        <Navigation title = {"Francesca Johnson"} pages={['Home', 'About', 'Work', 'CV', 'Contact']}/>
+        <div className="navigation_padding"></div>
+        <Navigation title={'Francesca Johnson'} pages={['Home', 'About', 'Work', 'CV', 'Contact']} />
         {children}
-        </body>
+      </body>
     </html>
   )
 }

@@ -1,7 +1,68 @@
-section {
-  height: 100vh;
+.aboutContainer {
   display: flex;
+  flex-direction: column;
+}
+
+.fullHeightSection {
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
+  text-align: center;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+.navHeightSection {
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem;
+  border-top: 5rem solid #DA7b93; 
+  box-sizing:content-box;
+}
+
+.fullHeightSection button,
+.navHeightSection button {
+  padding: 1rem;
+}
+
+
+.fullHeightSection .aboutContent{
+  height: 95%;
+}
+
+.navHeightSection .aboutContent{
+  height: 90%;
+}
+
+.fullHeightSection .aboutTitle,
+.navHeightSection .aboutTitle{
+  padding: 1rem;
+}
+
+.bottomButton,
+.topButton {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  font-weight: bold;
+}
+
+.topButton:hover,
+.bottomButton:hover {
+  font-weight: bold;
+}
+
+.buttonText {
+  margin-bottom: 5px;
 }
