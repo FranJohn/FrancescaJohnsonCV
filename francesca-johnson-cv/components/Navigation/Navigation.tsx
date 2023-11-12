@@ -12,7 +12,7 @@
  * @param {Array} props.pages - An array of strings representing the pages in the navigation bar.
  * @returns {JSX.Element} Rendered Navigation component.
  */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Navigation.module.css';
 
 /**
@@ -34,6 +34,13 @@ interface NavigationProps {
  */
 const Navigation: React.FC<NavigationProps> = ({ title, pages }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [currentRoute, setCurrentRoute] = useState('home');
+
+    const set_route = (page: string) => {
+        // Set the current route when the route changes
+        setCurrentRoute(page);
+        toggleDropdown();
+      };
 
     /**
     * Toggles the dropdown visibility when the hamburger icon is clicked.
@@ -49,24 +56,31 @@ const Navigation: React.FC<NavigationProps> = ({ title, pages }) => {
      * @type {Array<JSX.Element>} Array of JSX elements representing dropdown items.
      */ 
     const dropdownItems = pages.map((item, index) => (
-        <div
+        <a
             key={index}
-            className={styles.dropdown__item}
-            onClick={() => toggleDropdown()}
+            href={`/${item.toLowerCase().replace(' ', '-')}`}
+            className={`${styles.dropdown__item} ${currentRoute === `/${item.toLowerCase().replace(' ', '-')}` ? styles.current : ''}`}
+            onClick={() => set_route(item)}
         >
             {item}
-        </div>
+        </a>
     ));
 
     return (
-    <>
+    <div className={styles.head__container}>
         <div className={`${styles.nav__container} ${isOpen ? styles.open : ''}`}>
             <nav className={`${styles.navigation} ${isOpen ? styles.open : ''}`}>
                 <div className={styles.logo}>{title}</div>
                 <div className={styles.links}>
                     {pages.map((page, index) => (
-                        <a key={index} href={`/${page.toLowerCase().replace(' ', '-')}`} data-testid={`nav-link-${page.toLowerCase()}`}>
-                            {page}
+                        <a
+                            key={index}
+                            className={`${styles.page} ${currentRoute === `/${page.toLowerCase().replace(' ', '-')}` ? styles.current : ''}`}
+                            href={`/${page.toLowerCase().replace(' ', '-')}`}
+                            onClick={() => set_route(page)}
+                            data-testid={`nav-link-${page.toLowerCase()}`}
+                        >                            
+                        {page}
                         </a>
                     ))}
                 </div>
@@ -86,7 +100,7 @@ const Navigation: React.FC<NavigationProps> = ({ title, pages }) => {
                     {dropdownItems}
                 </div>
         </div>  
-    </>
+    </div>
   );
 };
 

@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Saira } from 'next/font/google'
 import Navigation from '@/components/Navigation/Navigation' 
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+
+const inter = Saira({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Francesca Johnson CV App',
+  title: 'Francesca Johnson CV',
   description: 'Learn about my skills and experiences.',
 }
 
@@ -17,7 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}><Navigation title = {"Francesca Johnson: CV"} pages={['Home', 'About', 'Work', 'CV', 'Contact']}/>{children}</body>
+      <head>
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+      </head>
+      <body className={inter.className}>
+        <Navigation title = {"Francesca Johnson"} pages={['Home', 'About', 'Work', 'CV', 'Contact']}/>
+        {children}
+        </body>
     </html>
   )
 }
