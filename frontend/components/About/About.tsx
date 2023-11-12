@@ -112,9 +112,21 @@ const About: React.FC = () => {
     index !==0 ? scrollToSection(index) : scrollToTop();
   };
 
+  const handleWheelScroll = (event: React.WheelEvent) => {
+    const delta = event.deltaY;
+    if (delta > 0) {
+      // Scrolling down
+      const nextIndex = Math.min(textData.length - 1, Math.floor(window.scrollY / window.innerHeight) + 1);
+      scrollToSection(nextIndex);
+    } else if (delta < 0) {
+      // Scrolling up
+      const prevIndex = Math.max(0, Math.floor(window.scrollY / window.innerHeight) - 1);
+      prevIndex !==0 ? scrollToSection(prevIndex) : scrollToTop();
+    }
+  };
+
   return (
-    <div className={styles.aboutContainer}>
-      {textData?.map((aboutSection: any, index: number) => (
+    <div className={styles.aboutContainer} onWheel={handleWheelScroll}>      {textData?.map((aboutSection: any, index: number) => (
         <section key={`section ${index}`} className={styles.aboutSection} ref={sectionRefs[index]} >
           <div  key={`section_container ${index}`} className={index === 0 ? styles.fullHeightSection: styles.navHeightSection}>
             {index !== 0 && (
