@@ -1,0 +1,26 @@
+{
+    "about1Title": "Introduction",
+    "about1Content": {"text": [
+        "Introduction content",
+        "",
+        "Next paragraph"
+    ]},
+    "about2Title": "Education",
+    "about2Content": {"text": [
+        "Education content",
+        "",
+        "Next paragraph"
+    ]},
+    "about3Title": "Work",
+    "about3Content": {"text": [
+        "Work content",
+        "",
+        "Next paragraph"
+    ]},
+    "about4Title": "Interests",
+    "about4Content": {"text": [
+        "Interests content",
+        "",
+        "Next paragraph"
+    ]}
+}

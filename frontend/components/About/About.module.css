@@ -26,6 +26,12 @@
   box-sizing:content-box;
 }
 
+.aboutTitle {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .fullHeightSection button,
 .navHeightSection button {
   padding: 1rem;
