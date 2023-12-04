@@ -1,7 +1,7 @@
 'use client'
 import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
-import styles from './Home.module.css';
+import styles from './Home.module.scss';
 
 interface HomeData {
   text: string[];
@@ -44,6 +44,7 @@ const Home: React.FC = () => {
           width={200}
           height={200}
           className={styles.profileImage}
+          priority
         />
       </div>
       <div className={styles.textContainer}>

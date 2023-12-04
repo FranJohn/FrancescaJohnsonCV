@@ -1,0 +1,26 @@
+.dropdown__btn {
+    padding: 10px;
+    width: 50%;
+    background-color: #ff0000;
+    border-radius: 5px;
+    display: relative;
+    margin: 10px;
+}
+
+.dropdown__container {
+    padding: 10px;
+    width: 50%;
+    background-color: #ff0000;
+    border-radius: 5px;
+    display: none;
+    .show {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        li {
+            padding: 5px; 
+            display: flex;
+        }
+    }
+}
+

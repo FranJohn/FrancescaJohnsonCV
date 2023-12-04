@@ -30,4 +30,21 @@ describe('About component', () => {
     expect(Element.prototype.scrollIntoView).toHaveBeenCalled();
   });
 
+  test('should handle wheel scroll down', () => {
+    const { container } = render(<About />);
+
+    fireEvent.wheel(container, { deltaY: 1 });
+    expect(screen.getElementsByClassName("aboutTitle")[0] === "Introduction");
+  });
+
+  test('should handle wheel scroll up', () => {
+    const { container } = render(<About />);
+    const scrollSpy = jest.spyOn(window, 'scrollTo');
+
+    fireEvent.wheel(container, { deltaY: -1 });
+
+    expect(scrollSpy).toHaveBeenCalled();
+    expect(scrollSpy.mock.calls[0][0]).toMatchObject({ top: expect.any(Number) });
+  });
+
 });

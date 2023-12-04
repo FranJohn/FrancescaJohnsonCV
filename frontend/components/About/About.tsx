@@ -8,56 +8,58 @@ const About: React.FC = () => {
   const sectionRefs: React.RefObject<HTMLDivElement>[] = Array(5).fill(0).map(() => useRef<HTMLDivElement>(null));
 
   const backup_text = {
-    "about1": {
-        "Title": "Introduction",
-        "Content": {
-            "text": [
-            "Hello. I'm Francesca, a passionate software developer hailing from Tunbridge Wells in Kent, England, and currently calling the beautiful landscapes of Oxfordshire my home.",
-            "My journey in the tech world began with a First Degree Master's in Electronic and Electrical Engineering. While navigating the complexities of circuits and systems, I discovered my true passion lay in the world of coding.",
-            "Fast forward to today, and I find myself immersed in the dynamic realm of software development. My expertise spans a spectrum of roles, from crafting innovative web applications with a focus on frontend development to venturing into high-profile project management.",
-            "My current role is varied, which has exposed me to a wide range of sectors, technologies and customers. However, my major focus throughout has been Frontend development and I would be excited to move into a role that allows me to further develop these skills and specialise."
-            ]
+    data: [
+        {
+            Title: "Introduction",
+            Content: {
+                text: [
+                "Hello. I'm Francesca, a passionate software developer hailing from Tunbridge Wells in Kent, England, and currently calling the beautiful landscapes of Oxfordshire my home.",
+                "My journey in the tech world began with a First Degree Master's in Electronic and Electrical Engineering. While navigating the complexities of circuits and systems, I discovered my true passion lay in the world of coding.",
+                "Fast forward to today, and I find myself immersed in the dynamic realm of software development. My expertise spans a spectrum of roles, from crafting innovative web applications with a focus on frontend development to venturing into high-profile project management.",
+                "My current role is varied, which has exposed me to a wide range of sectors, technologies and customers. However, my major focus throughout has been Frontend development and I would be excited to move into a role that allows me to further develop these skills and specialise."
+                ]
+            }
+        },
+        {
+            Title: "Education",
+            Content: {
+                text: [
+                "First Class MEng Electrical and Electronic Engineering (with Honours): Receiving  a First in my studies with a testament to my passion for understanding and navigating the intricacies of technology. Throughout my studies, I discovered my passion for working with code - starting with firmware coding in Verilog and quickly moving onto C, C++ and Python. My studies helped develop strong problem-solving and mathematical skills with an appreciation of robust software design for deployment and use. For my final year project, I worked to create a blood flow measurement device to analyse the effects of FES rowing on paralysed patient's muscles - work that, alongside a model of the forces experienced in rowing went to conference.",
+                "I completed my school education at Tunbridge Wells Girls' Grammar School in Kent. At A level I received: Mathematics (A), Economics (A), Further Mathematics (B), Physics (B). At GCSE: 6A* 4A 1B with A* including Mathematics and English. "
+                ]
+            }
+        },
+        {
+            Title: "Work",
+            Content: {
+                text: [
+                "In the coding realm, I find joy in working with technologies like React, JavaScript, Node.js, Python, and C/C++. If there's a frontend tech I haven't touched yet, I'm likely eager to dive in!",
+                "My work is fuelled  by challenges, shared goals, and collaborative efforts. I've embraced elements of agile development, valuing stakeholder involvement and responsiveness to feedback.",
+                "Among my proud achievements are web applications for product configuration and visualization. These products were originally targeted at the self-driving car market but are now being adopted for use in new products and markets. Overcoming challenges like data encoding, network FTP, and complex mathematical modelling, I've crafted solutions that are now hosted both locally and on the cloud."
+                ]
+            }
+        },
+        {
+            Title: "Leadership and growth",
+            Content: {
+              text: [
+                    "In leadership, I've recently spearheaded planning and delegation for a new product, blending research, cross-team collaboration, and IP protection. I worked closely with key stakeholders to create a project plan and gain approval from all decision makers. The company board used my documentation and approach to recommend new processes to be used in the future.",
+                    "I've also represented the company in some cutting-edge technology demonstrations across Europe. This has given me the chance to develop my customer facing skills and learn from the sales team. It has also improved my ability to explain technical concepts to both a technical and non-technical audience. In some demonstrations, I have been the only technical expert from our company at the event. With only a short time to set-up and demonstrate our product to the other company, I rely on quick thinking and a calm head. There will inevitably be unique conditions, which require innovative problem-solving skills and dedication to resolve issues in the few days we are with our customers."
+                ]
+            }
+        },
+        {
+            Title: "Interests",
+            Content: {
+              text: [
+                "Beyond coding behind my screen, you'll find me indulging in a variety of interests.", 
+                "I'm a Formula 1 enthusiast. I luckily have a group of friends who also love to watch and don't seem to mind me nattering about it!",
+                "Aside from this, I really enjoy heading out into the countryside for walks (especially when I can borrow a dog or two from friends and family!). I love getting some light exercise into my daily routine and find a dog walk a day is the perfect way to get this.",
+                "I love spending time exploring new topics through podcasts and books. Staying on the cutting edge is crucial, and I achieve this through discussions with industry friends, exploring LinkedIn, and constant online learning. Currently, I'm set on delving deeper into the world of frontend development, where my true passion lies..."
+            ]}
         }
-    },
-    "about2": {
-        "Title": "Education",
-        "Content": {
-            "text": [
-            "Education content",
-            "",
-            "Next paragraph"
-            ]
-        }
-    },
-    "about3": {
-        "Title": "Work",
-        "Content": {
-            "text": [
-            "In the coding realm, I find joy in working with technologies like React, JavaScript, Node.js, Python, and C/C++. If there's a frontend tech I haven't touched yet, I'm likely eager to dive in!",
-            "My work is fueled by challenges, shared goals, and collaborative efforts. I've embraced elements of agile development, valuing stakeholder involvement and responsiveness to feedback.",
-            "Among my proud achievements are web applications for product configuration and visualization. These product were origionally targeted for the self-driving car market but are now being adopted for use in new products and markets. Overcoming challenges like data encoding, network FTP, and complex mathematical modeling, I've crafted solutions that are now hosted both locally and on the cloud."
-            ]
-        }
-    },
-    "about4": {
-        "Title": "Leadership and growth",
-        "Content": {
-            "text": [
-            ""
-            ]
-        }
-    },
-    "about5": {
-        "Title": "Interests",
-        "Content": {
-            "text": [
-            "Beyond coding behind my screen, you'll find me indulging in a variety of interests.", 
-            "I'm a Formula 1 enthusiast. I luckily have a group of friends who also love to watch and don't seem to mind me nattering about it!",
-            "I love spending time exploring new topics through podcasts and books. Learning new things interests me greatly and i love science, technology and business topics.",
-            "Aside from this, I really enjoy heading out into the countryside for walks (especially when I can borrow a dog or two from friends and family!). I love getting some light exercise into my daily routine and find a dog walk a day is the perfect way to get this."
-        ]}
-    }
-  }
+    ]
+}
 
   useEffect(() => {
     // Flash the buttons twice on the initial render
@@ -88,7 +90,7 @@ const About: React.FC = () => {
         setTextData(data.data);
       } catch (error) {
         console.error('Error fetching text data:', error);
-        setTextData(backup_text);
+        setTextData(backup_text.data);
       }
     };
 
@@ -97,7 +99,7 @@ const About: React.FC = () => {
 
   const scrollToSection = (index: number) => {
     if (sectionRefs[index].current) {
-      sectionRefs[index].current.scrollIntoView({ behavior: 'smooth' });
+      sectionRefs[index].current?.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -130,7 +132,7 @@ const About: React.FC = () => {
         <section key={`section ${index}`} className={styles.aboutSection} ref={sectionRefs[index]} >
           <div  key={`section_container ${index}`} className={index === 0 ? styles.fullHeightSection: styles.navHeightSection}>
             {index !== 0 && (
-              <button key={`up button ${index}`}                 className={`${styles.topButton} ${flashButtons ? styles.flashButtons : ''}`} onClick={() => handleClick(index-1)}>
+              <button key={`up button ${index}`} className={`${styles.topButton} ${flashButtons ? styles.flashButtons : ''}`} onClick={() => handleClick(index-1)}>
               <span  key={`up button icon ${index}`} className={styles.arrow}>&#8743;</span>
               <span  key={`up button text ${index}`} className={styles.buttonText}>Up to {textData[index-1].Title}</span>
               </button>

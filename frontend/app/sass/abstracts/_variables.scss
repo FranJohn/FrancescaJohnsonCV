@@ -1,0 +1,26 @@
+// Color scheme
+$main-color: #2F4454;
+$secondary-color: #2E151B;
+$accent-color: #DA7B93;
+$additional-color-1: #376E6E;
+$additional-color-2: #1C3333;
+
+$foreground-color: #fff;
+$background-start-color: #000;
+$background-end-color: $additional-color-2;
+
+// Font
+$font-family: 'Saira', sans-serif;
+
+// Export variables
+:root {
+    .root-vars {
+    --main-color: $main-color;
+    --secondary-color: $secondary-color;
+    --accent-color: $accent-color;
+    --additional-color-1: $additional-color-1;
+    --additional-color-2: $additional-color-2;
+    
+    --font-family: $font-family;
+    }
+}
